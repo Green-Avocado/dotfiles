@@ -5,10 +5,19 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 set number
-let g:livepreview_previewer = 'qpdfview'
+syntax enable
+set ruler
+set autoindent
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set shiftround
+set expandtab
 
 call plug#begin('~/.vim/plugged')
 
   Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 call plug#end()
+
+let g:livepreview_previewer = 'qpdfview'
