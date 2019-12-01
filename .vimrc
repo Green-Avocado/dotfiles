@@ -14,10 +14,10 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
+let g:livepreview_previewer = 'qpdfview'
+
 call plug#begin('~/.vim/plugged')
 
   Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 call plug#end()
-
-let g:livepreview_previewer = 'qpdfview'
