@@ -19,15 +19,13 @@ set expandtab
 "latex-live-preview settings
 let g:livepreview_previewer = 'qpdfview'
 
-"lightline settings
-set laststatus=2
-set noshowmode
-
 call plug#begin('~/.vim/plugged')
 
     Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
-    Plug 'itchyny/lightline.vim'
+    Plug 'vim-airline/vim-airline'
     Plug 'scrooloose/nerdtree'
+    Plug 'yggdroot/indentline'
+    Plug 'scrooloose/syntastic'
 
 call plug#end()
 
