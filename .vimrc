@@ -19,6 +19,9 @@ set expandtab
 "latex-live-preview settings
 let g:livepreview_previewer = 'qpdfview'
 
+"syntastic settings
+let g:syntastic_quiet_messages = { 'type': 'style' }
+
 call plug#begin('~/.vim/plugged')
 
     Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
