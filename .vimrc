@@ -27,7 +27,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
     Plug 'vim-airline/vim-airline'
     Plug 'scrooloose/nerdtree'
-    Plug 'yggdroot/indentline'
     Plug 'scrooloose/syntastic'
 
 call plug#end()
