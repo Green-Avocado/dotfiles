@@ -15,6 +15,7 @@ set softtabstop=4
 set shiftwidth=4
 set shiftround
 set expandtab
+set scrolloff=4
 
 "latex-live-preview settings
 let g:livepreview_previewer = 'qpdfview'
