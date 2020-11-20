@@ -5,7 +5,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-"vim defaults
+"vim settings 
 set number
 syntax enable
 set ruler
@@ -17,15 +17,11 @@ set shiftround
 set expandtab
 set scrolloff=4
 
-"latex-live-preview settings
-let g:livepreview_previewer = 'qpdfview'
-
 "syntastic settings
-let g:syntastic_quiet_messages = { 'type': 'style' }
+let g:syntastic_mode_map = { 'mode': 'passive' }
 
 call plug#begin('~/.vim/plugged')
 
-    Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
     Plug 'vim-airline/vim-airline'
     Plug 'scrooloose/nerdtree'
     Plug 'scrooloose/syntastic'
