@@ -21,10 +21,8 @@ set scrolloff=4
 let g:syntastic_mode_map = { 'mode': 'passive' }
 
 call plug#begin('~/.vim/plugged')
-
     Plug 'vim-airline/vim-airline'
     Plug 'scrooloose/nerdtree'
     Plug 'scrooloose/syntastic'
-
 call plug#end()
 
