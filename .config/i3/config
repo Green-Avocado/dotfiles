@@ -1,11 +1,20 @@
+#
 # Custom hotkeys
+#
 
+# Screenshot
 bindsym Print --release exec --no-startup-id import png:- | xclip -selection clipboard -t image/png
 bindsym $mod+Print --release exec --no-startup-id import ~/Documents/screenshots/$(date '+%Y-%m-%d'_'%H:%M:%S').png
 
+# Move workspaces between monitors
+bindsym $mod+o move workspace to output left
+bindsym $mod+p move workspace to output right
 
 
+
+#
 # Custom settings
+#
 
 focus_follows_mouse no
 
