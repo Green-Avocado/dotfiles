@@ -6,22 +6,27 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 "vim settings 
-set number
 syntax enable
+set number
 set ruler
-set autoindent
+
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+
+set autoindent
 set shiftround
 set expandtab
+
 set scrolloff=4
+
+set laststatus=2
 
 "syntastic settings
 let g:syntastic_mode_map = { 'mode': 'passive' }
 
 call plug#begin('~/.vim/plugged')
-    Plug 'vim-airline/vim-airline'
+    Plug 'itchyny/lightline.vim'
     Plug 'scrooloose/nerdtree'
     Plug 'scrooloose/syntastic'
 call plug#end()
