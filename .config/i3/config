@@ -1,4 +1,13 @@
 #
+# Custom startup commands
+#
+
+# Start thunar daemon
+exec --no-startup-id thunar --daemon
+
+
+
+#
 # Custom hotkeys
 #
 
