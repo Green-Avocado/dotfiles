@@ -21,14 +21,19 @@ order += "cpu_usage"
 order += "memory"
 order += "tztime local"
 
+ipv6 {
+        format_up = "IPv6: %ip"
+        format_down = ""
+}
+
 wireless _first_ {
         format_up = "W: (%quality at %essid) %ip"
-        format_down = "W: down"
+        format_down = ""
 }
 
 ethernet _first_ {
         format_up = "E: %ip (%speed)"
-        format_down = "E: down"
+        format_down = ""
 }
 
 battery all {
