@@ -43,7 +43,7 @@ bindsym $mod+minus scratchpad show
 
 focus_follows_mouse no
 
-default_border pixel
+default_border pixel 1
 default_floating_border normal
 
 smart_borders on
