@@ -67,7 +67,7 @@ else:
         fulltext = FA_PLUG + " "
         timeleft = ""
     elif state == "Unknown":
-        fulltext = FA_QUESTION + " " + FA_BATTERY + " "
+        fulltext = FA_BATTERY + " "
         timeleft = ""
     else:
         fulltext = FA_LIGHTNING + " " + FA_PLUG + " "
