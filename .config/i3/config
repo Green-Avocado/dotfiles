@@ -8,6 +8,9 @@ exec --no-startup-id thunar --daemon
 # Set background
 exec --no-startup-id ~/.fehbg
 
+# Start compositor
+exec --no-startup-id picom
+
 
 
 #
