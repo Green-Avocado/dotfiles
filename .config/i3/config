@@ -5,6 +5,9 @@
 # Start thunar daemon
 exec --no-startup-id thunar --daemon
 
+# Set background
+exec --no-startup-id ~/.fehbg
+
 
 
 #
