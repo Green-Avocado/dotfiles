@@ -54,6 +54,14 @@ interval=30
 
 
 
+# Network
+#
+[ssid]
+label=@ 
+interval=30
+
+
+
 # Volume indicator
 #
 [volume-pulseaudio]
