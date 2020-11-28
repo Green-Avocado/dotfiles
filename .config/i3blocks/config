@@ -26,6 +26,7 @@
 # Each block command defaults to the script name to avoid boilerplate.
 # Change $SCRIPT_DIR to the location of your scripts!
 command=$SCRIPT_DIR/$BLOCK_NAME
+interval=30
 separator_block_width=15
 markup=none
 
@@ -36,13 +37,11 @@ markup=none
 [memory]
 label=MEM 
 separator=false
-interval=30
 
 [memory]
 label=SWAP 
 instance=swap
 separator=false
-interval=30
 
 
 
@@ -50,7 +49,6 @@ interval=30
 #
 [cpu]
 label=CPU 
-interval=30
 
 
 
@@ -58,13 +56,11 @@ interval=30
 #
 [network]
 label=NET 
-interval=30
 separator=false
 separator_block_width=5
 
 [ssid]
 label=@ 
-interval=30
 
 
 
@@ -82,7 +78,6 @@ SUBSCRIBE=1
 #
 [battery2]
 markup=pango
-interval=30
 
 
 
