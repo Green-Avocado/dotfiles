@@ -56,6 +56,12 @@ interval=30
 
 # Network
 #
+[network]
+label=NET 
+interval=30
+separator=false
+separator_block_width=5
+
 [ssid]
 label=@ 
 interval=30
