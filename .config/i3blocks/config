@@ -56,7 +56,6 @@ label=CPU
 #
 [ssid]
 label=NET @ 
-interval=30
 
 
 
