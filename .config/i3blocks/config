@@ -56,11 +56,6 @@ label=CPU
 #
 [network]
 label=NET 
-separator=false
-separator_block_width=5
-
-[ssid]
-label=@ 
 
 
 

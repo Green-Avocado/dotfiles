@@ -1,24 +1,68 @@
 #!/usr/bin/env bash
 
-device=$(cat /proc/net/wireless | perl -ne '/(\w+):/ && print $1')
-status=$(cat /sys/class/net/${device}/operstate)
+# Copyright (C) 2014 Alexander Keller <github@nycroth.com>
+# Modified by Jason Ngo
 
-URGENT_VALUE=20
+# This program is free software: you can redistribute it and/o
+r modify
+# it under the terms of the GNU General Public License as publ
+ished by
+# the Free Software Foundation, either version 3 of the Licens
+e, or
+# (at your option) any later version.
 
-if [[ "${status}" == "up" ]]; then
-  if [[ -d "/sys/class/net/${device}/wireless" ]]; then
-    quality=$(grep ${device} /proc/net/wireless | awk '{ print int($3 * 100 / 70) }')
-    echo "${quality}%"
-    echo "${quality}%"
-    echo "#ffffff"
+# This program is distributed in the hope that it will be usef
+ul,
+# but WITHOUT ANY WARRANTY; without even the implied warranty 
+of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See th
+e
+# GNU General Public License for more details.
 
-    if [[ "${quality}" -le "${URGENT_VALUE}" ]]; then
-      exit 33
-    fi
-  else
-    echo "on"
-    echo "on"
-    echo ""
-  fi
+# You should have received a copy of the GNU General Public Li
+cense
+# along with this program.  If not, see <http://www.gnu.org/li
+censes/>.
+
+INTERFACE=$(cat /proc/net/wireless | perl -ne '/(\w+):/ && print $1')
+
+COLOR_GE80=${COLOR_GE80:-#00FF00}
+COLOR_GE60=${COLOR_GE60:-#FFF600}
+COLOR_GE40=${COLOR_GE40:-#FFAE00}
+COLOR_LOWR=${COLOR_LOWR:-#FF0000}
+COLOR_DOWN=${COLOR_DOWN:-#FF0000}
+
+# As per #36 -- It is transparent: e.g. if the machine has no battery or wireless
+# connection (think desktop), the corresponding block should not be displayed.
+[[ ! -d /sys/class/net/${INTERFACE}/wireless ]] && exit
+
+# If the wifi interface exists but no connection is active, "down" shall be displayed.
+if [[ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'down' ]]; then
+    echo "down"
+    echo "down"
+    echo $COLOR_DOWN
+    exit
+fi
+
+#------------------------------------------------------------------------
+
+QUALITY=$(iw dev ${INTERFACE} link | grep 'dBm$' | grep -Eoe '-[0-9]{2}' | awk '{print  ($1 > -50 ? 100 :($1 < -100 ? 0 : ($1+100)*2))}')
+
+#------------------------------------------------------------------------
+
+SSID_NAME=$(iwgetid -r)
+
+echo $QUALITY% @ ${SSID_NAME} # full text
+echo $QUALITY% @ ${SSID_NAME} # short text
+
+# color
+if [[ $QUALITY -ge 80 ]]; then
+    echo $COLOR_GE80
+elif [[ $QUALITY -ge 60 ]]; then
+    echo $COLOR_GE60
+elif [[ $QUALITY -ge 40 ]]; then
+    echo $COLOR_GE40
+else
+    echo $COLOR_LOWR
 fi
 
