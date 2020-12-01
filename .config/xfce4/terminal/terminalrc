@@ -29,13 +29,6 @@ MiscShowUnsafePasteDialog=FALSE
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
 FontName=Monospace 9
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
-BackgroundDarkness=0.950000
-ColorForeground=#839496
-ColorBackground=#002b36
-ColorCursor=#93a1a1
-ColorPalette=rgb(5,37,45);rgb(220,50,47);rgb(45,151,31);rgb(181,137,0);rgb(81,150,198);rgb(211,54,130);rgb(42,161,152);rgb(238,232,213);rgb(0,43,54);rgb(203,75,22);rgb(51,212,71);rgb(214,207,26);rgb(90,194,205);rgb(108,113,196);rgb(147,161,161);rgb(253,246,227)
-ColorBold=#93a1a1
-ColorBoldUseDefault=FALSE
-TabActivityColor=#dc322f
-ColorBoldIsBright=FALSE
+BackgroundDarkness=0.800000
+ColorPalette=#000000;#cc0000;#4e9a06;#c4a000;#3465a4;#75507b;#06989a;#d3d7cf;#555753;#ef2929;#8ae234;#fce94f;#739fcf;#ad7fa8;#34e2e2;#eeeeec
 
