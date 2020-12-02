@@ -35,6 +35,22 @@ bindsym $mod+Shift+minus move scratchpad
 # Show the first scratchpad window
 bindsym $mod+minus scratchpad show
 
+# Workspace mode
+mode "workspace" {
+        #Navigate workspaces
+        bindsym h workspace prev_on_output
+        bindsym j workspace next_on_output
+        bindsym k workspace prev_on_output
+        bindsym l workspace next_on_output
+
+        # back to normal: Enter or Escape or $mod+Shift+w
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+Shift+w mode "default"
+}
+
+bindsym $mod+Shift+w mode "workspace"
+
 
 
 #
