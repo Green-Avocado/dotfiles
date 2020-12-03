@@ -3,10 +3,10 @@
 #
 
 xep() {
-    if [ "$1" = "" ]; then
-        Xephyr -br -ac -noreset -screen $(xdpyinfo | awk '/dimensions/{print $2}') :1
+    if [ "$1" != "" ]; then
+        Xephyr -br -ac -noreset -fullscreen -screen $(xdpyinfo | awk '/dimensions/{print $2}') :$1
     else
-        Xephyr -br -ac -noreset -screen $(xdpyinfo | awk '/dimensions/{print $2}') :$1
+        xep 1
     fi
 }
 
