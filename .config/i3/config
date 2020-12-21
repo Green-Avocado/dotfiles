@@ -5,15 +5,17 @@
 # Start gnome polkit agent
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
-
 # Start thunar daemon
 exec --no-startup-id thunar --daemon
+
+# Start compositor
+exec --no-startup-id picom -b
 
 # Set background
 exec --no-startup-id ~/.fehbg
 
-# Start compositor
-exec --no-startup-id picom -b
+# Start redshift
+exec --no-startup-id redshift
 
 
 
