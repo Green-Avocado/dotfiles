@@ -39,7 +39,7 @@ label=MEM
 separator=false
 
 [memory]
-label=SWAP 
+label=SWP 
 instance=swap
 separator=false
 
