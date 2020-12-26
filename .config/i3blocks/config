@@ -79,6 +79,6 @@ markup=pango
 # Date Time
 #
 [time]
-command=date '+%Y-%m-%d %H:%M:%S'
+command=date '+%A %Y-%m-%d %H:%M:%S'
 interval=1
 
