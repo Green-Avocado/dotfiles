@@ -20,6 +20,9 @@ exec --no-startup-id ~/.fehbg
 # Start redshift
 exec --no-startup-id redshift
 
+# Start clipman
+exec --no-startup-id xfce4-clipman
+
 
 
 #
