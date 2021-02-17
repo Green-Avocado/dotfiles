@@ -29,9 +29,6 @@ exec --no-startup-id xfce4-clipman
 # Custom hotkeys
 #
 
-# Paste by typing
-bindsym $mod+x --release exec --no-startup-id xclip -selection clipboard -out | tr \\n \\r | xdotool selectwindow windowfocus type --clearmodifiers --delay 25 --window %@ --file -
-
 # Screenshot
 bindsym Print --release exec --no-startup-id import png:- | xclip -selection clipboard -t image/png
 bindsym $mod+Print --release exec --no-startup-id import ~/Documents/screenshots/$(date '+%Y-%m-%d'_'%H:%M:%S').png
