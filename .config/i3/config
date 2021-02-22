@@ -26,7 +26,7 @@ exec --no-startup-id xfce4-clipman
 
 
 #
-# Custom hotkeys
+# Custom binds
 #
 
 # Screenshot
@@ -42,70 +42,6 @@ bindsym $mod+Shift+minus move scratchpad
 
 # Show the first scratchpad window
 bindsym $mod+minus scratchpad show
-
-# Workspace mode
-mode "workspace" {
-        #Navigate workspaces
-        bindsym h workspace prev_on_output
-        bindsym j workspace next_on_output
-        bindsym k workspace prev_on_output
-        bindsym l workspace next_on_output
-
-        # switch to workspace
-        bindsym 1 workspace number $ws1
-        bindsym 2 workspace number $ws2
-        bindsym 3 workspace number $ws3
-        bindsym 4 workspace number $ws4
-        bindsym 5 workspace number $ws5
-        bindsym 6 workspace number $ws6
-        bindsym 7 workspace number $ws7
-        bindsym 8 workspace number $ws8
-        bindsym 9 workspace number $ws9
-        bindsym 0 workspace number $ws10
-
-        # switch to workspace reversed
-        bindsym $mod+1 workspace number $ws10
-        bindsym $mod+2 workspace number $ws9
-        bindsym $mod+3 workspace number $ws8
-        bindsym $mod+4 workspace number $ws7
-        bindsym $mod+5 workspace number $ws6
-        bindsym $mod+6 workspace number $ws5
-        bindsym $mod+7 workspace number $ws4
-        bindsym $mod+8 workspace number $ws3
-        bindsym $mod+9 workspace number $ws2
-        bindsym $mod+0 workspace number $ws1
-
-        # move to workspace
-        bindsym Shift+1 move container to workspace number $ws1
-        bindsym Shift+2 move container to workspace number $ws2
-        bindsym Shift+3 move container to workspace number $ws3
-        bindsym Shift+4 move container to workspace number $ws4
-        bindsym Shift+5 move container to workspace number $ws5
-        bindsym Shift+6 move container to workspace number $ws6
-        bindsym Shift+7 move container to workspace number $ws7
-        bindsym Shift+8 move container to workspace number $ws8
-        bindsym Shift+9 move container to workspace number $ws9
-        bindsym Shift+0 move container to workspace number $ws10
-
-        # move to workspace reversed
-        bindsym $mod+Shift+1 move container to workspace number $ws10
-        bindsym $mod+Shift+2 move container to workspace number $ws9
-        bindsym $mod+Shift+3 move container to workspace number $ws8
-        bindsym $mod+Shift+4 move container to workspace number $ws7
-        bindsym $mod+Shift+5 move container to workspace number $ws6
-        bindsym $mod+Shift+6 move container to workspace number $ws5
-        bindsym $mod+Shift+7 move container to workspace number $ws4
-        bindsym $mod+Shift+8 move container to workspace number $ws3
-        bindsym $mod+Shift+9 move container to workspace number $ws2
-        bindsym $mod+Shift+0 move container to workspace number $ws1
-
-        # back to normal: Enter or Escape or $mod+Shift+w
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+Shift+w mode "default"
-}
-
-bindsym $mod+Shift+w mode "workspace"
 
 
 
