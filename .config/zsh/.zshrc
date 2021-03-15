@@ -100,5 +100,5 @@ setopt no_share_history
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-. ~/.zsh_aliases
+source ~/.config/zsh/.zsh_aliases
 
