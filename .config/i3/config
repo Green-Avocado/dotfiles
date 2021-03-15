@@ -12,7 +12,7 @@ exec --no-startup-id thunar --daemon
 exec --no-startup-id picom -b
 
 # Start conky
-exec --no-startup-id conky --daemonize
+# exec --no-startup-id conky --daemonize
 
 # Set background
 exec --no-startup-id ~/.fehbg
