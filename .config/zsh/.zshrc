@@ -1,3 +1,5 @@
+HISTFILE=$HOME/.config/zsh/.zsh_history
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$PATH
 
@@ -100,5 +102,5 @@ setopt no_share_history
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source ~/.config/zsh/.zsh_aliases
+source $HOME/.config/zsh/.zsh_aliases
 

@@ -1,3 +1,3 @@
 # Set configuration directory
-export ZDOTDIR=$HOME/.config/zsh
+ZDOTDIR=$HOME/.config/zsh
 
