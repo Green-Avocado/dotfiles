@@ -69,12 +69,19 @@ gaps inner 8
 # Colors
 #
 
-# class                 border  backgr. text    indicator child_border
-client.focused          #55cc55 #55cc55 #111111 #55cc55   #55cc55
-client.focused_inactive #222222 #222222 #888888 #222222   #222222
-client.unfocused        #222222 #222222 #888888 #222222   #222222
-client.urgent           #900000 #900000 #ffffff #900000   #900000
-client.placeholder      #0c0c0c #0c0c0c #ffffff #0c0c0c   #0c0c0c
+set $focustext #ffffff
+set $nofocustext #888888
+set $focuscolor #0088ff
+set $nofocuscolor #222222
+set $urgentcolor #900000
+set $holdercolor #0c0c0c
+
+# class                 border           backgr.          text            indicator        child_border
+client.focused          $focuscolor      $focuscolor      $focustext      $focuscolor      $focuscolor
+client.focused_inactive $nofocuscolor    $nofocuscolor    $nofocustext    $nofocuscolor    $nofocuscolor
+client.unfocused        $nofocuscolor    $nofocuscolor    $nofocustext    $nofocuscolor    $nofocuscolor
+client.urgent           $urgentcolor     $urgentcolor     $focustext      $urgentcolor     $urgentcolor
+client.placeholder      $holdercolor     $holdercolor     $focustext      $holdercolor     $holdercolor
 
 client.background       #ffffff
 
