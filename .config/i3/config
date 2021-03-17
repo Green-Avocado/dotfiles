@@ -70,11 +70,11 @@ gaps inner 8
 #
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #4c7899 #285577 #ffffff #2e9ef4   #55cc55
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #55cc55
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.focused          #55cc55 #55cc55 #111111 #55cc55   #55cc55
+client.focused_inactive #222222 #222222 #888888 #222222   #222222
+client.unfocused        #222222 #222222 #888888 #222222   #222222
+client.urgent           #900000 #900000 #ffffff #900000   #900000
+client.placeholder      #0c0c0c #0c0c0c #ffffff #0c0c0c   #0c0c0c
 
 client.background       #ffffff
 
