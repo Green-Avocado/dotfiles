@@ -6,7 +6,7 @@ HISTFILE=$ZDOTDIR/.zsh_history
 # Path to your oh-my-zsh installation.
 # ZSH=/usr/share/oh-my-zsh/
 
-if [[ -n $ZSH ]]; then
+if [[ -v $ZSH ]]; then
   export ZSH=/usr/share/oh-my-zsh/
 fi
 
