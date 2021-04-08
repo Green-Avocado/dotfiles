@@ -47,6 +47,14 @@ bindsym $mod+Shift+minus move scratchpad
 # Show the first scratchpad window
 bindsym $mod+minus scratchpad show
 
+# Goto next / prev workspace
+bindsym $mod+bracketleft workspace prev
+bindsym $mod+bracketright workspace next
+
+# Move to next / prev workspace
+bindsym $mod+Shift+bracketleft move container to workspace prev
+bindsym $mod+Shift+bracketright move container to workspace next
+
 
 
 #
