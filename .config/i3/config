@@ -11,9 +11,6 @@ exec --no-startup-id thunar --daemon
 # Start compositor
 exec --no-startup-id picom -b
 
-# Start conky
-# exec --no-startup-id conky --daemonize
-
 # Set background
 exec --no-startup-id ~/.fehbg
 
