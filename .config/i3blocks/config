@@ -52,13 +52,6 @@ label=CPU
 
 
 
-# Network
-#
-[ssid]
-label=NET @ 
-
-
-
 # Volume indicator
 #
 [volume-pulseaudio]
