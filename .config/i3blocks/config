@@ -33,7 +33,6 @@ markup=none
 
 
 # Memory usage
-#
 [memory]
 label=MEM 
 separator=false
@@ -43,34 +42,22 @@ label=SWP
 instance=swap
 separator=false
 
-
-
 # CPU usage
-#
 [cpu]
 label=CPU 
 
-
-
 # Volume indicator
-#
 [volume-pulseaudio]
 interval=persist
 signal=1
 LONG_FORMAT="VOL ${VOL}%"
 SUBSCRIBE=1
 
-
-
 # Battery
-#
 [battery2]
 markup=pango
 
-
-
 # Date Time
-#
 [time]
 command=date '+%A %Y-%m-%d %H:%M:%S'
 interval=1
