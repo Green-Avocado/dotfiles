@@ -2,6 +2,9 @@
 # Custom startup commands
 #
 
+# Autostart desktop entries
+exec --no-startup-id bash ~/.config/i3/autostart.sh
+
 # Start gnome polkit agent
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
@@ -13,12 +16,6 @@ exec --no-startup-id picom -b
 
 # Set background
 exec --no-startup-id ~/.fehbg
-
-# Start redshift
-exec --no-startup-id redshift
-
-# Start clipman
-exec --no-startup-id xfce4-clipman
 
 
 
