@@ -2,9 +2,6 @@
 # Custom startup commands
 #
 
-# Autostart desktop entries
-exec --no-startup-id bash ~/.config/i3/autostart.sh
-
 # Start gnome polkit agent
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
