@@ -29,7 +29,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 5%-
 
 # Screenshot
 bindsym Print --release exec --no-startup-id import png:- | xclip -selection clipboard -t image/png
-bindsym $mod+Print --release exec --no-startup-id import ~/Documents/screenshots/$(date '+%Y-%m-%d'_'%H:%M:%S').png
+bindsym $mod+Print --release exec --no-startup-id import ~/Documents/.screenshots/$(date '+%Y-%m-%d'_'%H:%M:%S').png
 
 # Move workspaces between monitors
 bindsym $mod+o move workspace to output left
