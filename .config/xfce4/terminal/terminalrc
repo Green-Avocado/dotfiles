@@ -34,4 +34,5 @@ ColorPalette=rgb(68,68,68);rgb(221,17,17);rgb(95,171,23);rgb(213,177,17);rgb(69,
 ShortcutsNoHelpkey=TRUE
 ShortcutsNoMenukey=TRUE
 ShortcutsNoMnemonics=TRUE
+ScrollingOnOutput=FALSE
 
