@@ -46,6 +46,13 @@ separator=false
 [cpu]
 label=CPU 
 
+# Volume indicator
+[volume-pulseaudio]
+interval=persist
+signal=1
+LONG_FORMAT="VOL ${VOL}%"
+SUBSCRIBE=1
+
 # Battery
 [battery2]
 markup=pango
