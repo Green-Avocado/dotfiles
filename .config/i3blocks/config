@@ -53,10 +53,6 @@ signal=1
 LONG_FORMAT="VOL ${VOL}%"
 SUBSCRIBE=1
 
-# Battery
-[battery2]
-markup=pango
-
 # Date Time
 [time]
 command=date '+%A %Y-%m-%d %H:%M:%S'
