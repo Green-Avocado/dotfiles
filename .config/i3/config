@@ -17,9 +17,6 @@ exec --no-startup-id picom -b
 # Set background
 exec --no-startup-id ~/.fehbg
 
-# Start power manager
-exec --no-startup-id xfce4-power-manager
-
 
 
 #
