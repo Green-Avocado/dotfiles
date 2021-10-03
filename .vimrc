@@ -5,6 +5,8 @@ if empty(glob('~/.vim/autoload/plug.vim'))
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+
+
 "vim settings 
 syntax enable
 set number relativenumber
@@ -22,9 +24,14 @@ set scrolloff=4
 
 set laststatus=2
 
+
+
 "syntastic settings
 let g:syntastic_mode_map = { 'mode': 'passive' }
 
+
+
+"plugins
 call plug#begin('~/.vim/plugged')
     Plug 'itchyny/lightline.vim'
     Plug 'scrooloose/nerdtree'
