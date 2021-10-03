@@ -7,7 +7,7 @@ endif
 
 "vim settings 
 syntax enable
-set number
+set number relativenumber
 set ruler
 
 set tabstop=4
