@@ -10,7 +10,6 @@ endif
 "vim settings 
 syntax enable
 set number relativenumber
-set ruler
 
 set tabstop=4
 set softtabstop=4
