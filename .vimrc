@@ -39,10 +39,18 @@ let g:syntastic_mode_map = { 'mode': 'passive' }
 
 
 
+"vim-slime settings
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
+let g:slime_dont_ask_default = 1
+
+
+
 "plugins
 call plug#begin('~/.vim/plugged')
     Plug 'itchyny/lightline.vim'
     Plug 'scrooloose/nerdtree'
     Plug 'scrooloose/syntastic'
+    Plug 'jpalardy/vim-slime'
 call plug#end()
 
