@@ -10,5 +10,6 @@
     fontFamily: "DejaVu Sans Mono"
     fontSize: 11
     tabLength: 4
+  "linter-ui-default": {}
   welcome:
     showOnStartup: false
