@@ -1,0 +1,14 @@
+"*":
+  core:
+    disabledPackages: [
+      "metrics"
+      "exception-reporting"
+    ]
+    telemetryConsent: "no"
+  editor:
+    defaultFontSize: 11
+    fontFamily: "DejaVu Sans Mono"
+    fontSize: 11
+    tabLength: 4
+  welcome:
+    showOnStartup: false
