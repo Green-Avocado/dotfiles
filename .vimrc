@@ -52,5 +52,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'scrooloose/nerdtree'
     Plug 'scrooloose/syntastic'
     Plug 'jpalardy/vim-slime'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
