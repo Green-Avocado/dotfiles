@@ -49,6 +49,10 @@ bindsym $mod+bracketright workspace next
 bindsym $mod+Shift+bracketleft move container to workspace prev
 bindsym $mod+Shift+bracketright move container to workspace next
 
+# Activate / deactivate gaps
+bindsym $mod+g gaps inner all set 8
+bindsym $mod+Shift+g gaps inner all set 0
+
 
 
 #
