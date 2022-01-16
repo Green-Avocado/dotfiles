@@ -46,13 +46,6 @@ separator=false
 [cpu]
 label=CPU 
 
-# Volume indicator
-[volume-pulseaudio]
-interval=persist
-signal=1
-LONG_FORMAT="VOL ${VOL}%"
-SUBSCRIBE=1
-
 # Date Time
 [time]
 command=date '+%A %Y-%m-%d %H:%M:%S'
