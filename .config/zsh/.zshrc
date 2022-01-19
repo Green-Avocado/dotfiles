@@ -106,3 +106,7 @@ setopt no_share_history
 
 source $ZDOTDIR/.zsh_aliases
 
+if [[ -a $ZDOTDIR/.zshrc.local ]]; then
+    source $ZDOTDIR/.zshrc.local
+fi
+
