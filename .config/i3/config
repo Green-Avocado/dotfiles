@@ -23,8 +23,6 @@ exec --no-startup-id ~/.fehbg
 # Custom binds
 #
 
-set $mod Mod4
-
 # Use brightnessctl to change backlight
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl s +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 5%-
@@ -106,7 +104,7 @@ client.background       #ffffff
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-# set $mod Mod4
+set $mod Mod4
 
 # Map directions
 set $left h
