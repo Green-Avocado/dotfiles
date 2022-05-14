@@ -30,9 +30,9 @@ ScrollingBar=TERMINAL_SCROLLBAR_NONE
 FontName=Monospace 8
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 BackgroundDarkness=0.800000
-ColorPalette=rgb(68,68,68);rgb(240,34,34);rgb(95,171,23);rgb(213,177,17);rgb(69,118,181);rgb(134,97,140);rgb(23,169,171);rgb(211,215,207);rgb(85,87,83);rgb(240,68,68);rgb(138,226,52);rgb(252,233,79);rgb(115,159,207);rgb(173,127,168);rgb(52,226,226);rgb(238,238,236)
 ShortcutsNoHelpkey=TRUE
 ShortcutsNoMenukey=TRUE
 ShortcutsNoMnemonics=TRUE
 ScrollingOnOutput=FALSE
+MiscRightClickAction=TERMINAL_RIGHT_CLICK_ACTION_CONTEXT_MENU
 
