@@ -61,8 +61,7 @@ bindsym $mod+Shift+g gaps inner all set 0
 
 focus_follows_mouse no
 
-default_border pixel 2
-default_floating_border normal
+for_window [class="^.*"] border pixel 2
 
 smart_borders on
 smart_gaps on
