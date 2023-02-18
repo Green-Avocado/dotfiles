@@ -11,7 +11,7 @@ set shiftround
 set expandtab
 
 set scrolloff=4
-
+set mouse=nv
 set laststatus=2
 
 "autocmds
