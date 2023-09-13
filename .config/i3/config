@@ -1,25 +1,4 @@
 #
-# Custom startup commands
-#
-
-# Autostart ~/.config/autostart desktop entries
-exec --no-startup-id dex -a
-
-# Start gnome polkit agent
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-
-# Start thunar daemon
-exec --no-startup-id thunar --daemon
-
-# Start compositor
-exec --no-startup-id picom -b
-
-# Set background
-exec --no-startup-id ~/.fehbg
-
-
-
-#
 # Custom binds
 #
 
