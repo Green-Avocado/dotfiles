@@ -10,6 +10,9 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 5%-
 bindsym Print --release exec --no-startup-id import png:- | xclip -selection clipboard -t image/png
 bindsym $mod+Print --release exec --no-startup-id import ~/Screenshots/$(date '+%Y-%m-%d'_'%H:%M:%S').png
 
+# Lock screen
+bindsym $mod+Shift+x exec --no-startup-id i3lock --color=000000
+
 # Move workspaces between monitors
 bindsym $mod+o move workspace to output left
 bindsym $mod+p move workspace to output right
