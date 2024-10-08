@@ -1,4 +1,13 @@
 #
+# Startup
+#
+
+# picom
+exec --no-startup-id picom --daemon
+
+
+
+#
 # Custom binds
 #
 
@@ -30,6 +39,7 @@ bindsym $mod+bracketright workspace next
 # Move to next / prev workspace
 bindsym $mod+Shift+bracketleft move container to workspace prev
 bindsym $mod+Shift+bracketright move container to workspace next
+
 
 
 #
