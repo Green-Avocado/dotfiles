@@ -6,4 +6,3 @@ export PATH=$HOME/.cargo/bin:$PATH
 if [[ -a $ZDOTDIR/.zprofile.local ]]; then
     source $ZDOTDIR/.zprofile.local
 fi
-
