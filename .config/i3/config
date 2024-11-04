@@ -5,6 +5,9 @@
 # picom
 exec --no-startup-id picom --daemon
 
+# picom
+exec --no-startup-id xfce4-power-manager --daemon
+
 
 
 #
