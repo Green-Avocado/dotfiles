@@ -23,7 +23,7 @@ bindsym Print --release exec --no-startup-id import png:- | xclip -selection cli
 bindsym $mod+Print --release exec --no-startup-id import ~/Screenshots/$(date '+%Y-%m-%d'_'%H:%M:%S').png
 
 # Lock screen
-bindsym $mod+Shift+x exec --no-startup-id i3lock --color=000000
+bindsym $mod+Shift+x exec --no-startup-id i3lock
 
 # Move workspaces between monitors
 bindsym $mod+o move workspace to output left
