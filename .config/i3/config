@@ -17,10 +17,6 @@ exec --no-startup-id xfce4-clipman
 # Custom binds
 #
 
-# Use brightnessctl to change backlight
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl s +5%
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 5%-
-
 # Screenshot
 bindsym Print --release exec --no-startup-id xfce4-screenshooter -rc
 bindsym $mod+Print --release exec --no-startup-id xfce4-screenshooter
